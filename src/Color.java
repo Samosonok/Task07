@@ -19,7 +19,6 @@ public enum Color {
 
     Color(String hex) {
         this.hex = hex;
-        java.awt.Color.decode(hex);
         r = Integer.valueOf(hex.substring(1, 3), 16);
         g = Integer.valueOf(hex.substring(3, 5), 16);
         b = Integer.valueOf(hex.substring(5, 7), 16);
